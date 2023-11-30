@@ -1,0 +1,87 @@
+
+a {
+    text-decoration: none;
+}
+
+.w-50.me-3 {
+    border: 0.5px solid rgb(199, 196, 196);
+    border-radius: 7px;
+    height: 30px;
+}
+
+input.form-control {
+    border: none;
+    padding: 0 10px;
+    font-size: small;
+}
+
+.fa-solid.fa-magnifying-glass {
+    margin: 10px;
+}
+
+.row .col-lg-2 {
+    border-right: 0.5px solid rgb(199, 196, 196);
+    min-height: 1000px;
+}
+
+.row.row-cols-5 .col {
+    height: 200px;
+    border: 1px solid black;
+    margin: 10px;
+    width: 22%;
+}
+
+.d-flex button {
+    margin-right: 5px;
+    padding: 3px 10px;
+    font-size: small;
+    font-weight: 600;
+}
+
+.card-title {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#allColors {
+    background: linear-gradient(
+        to right,
+        red 0%,
+        red 30%,
+        rgb(4, 0, 255) 30%,
+        rgb(4, 0, 255) 70%,
+        orange 70%,
+        orange 100%
+    );
+}
+
+#blackColor {
+    background-color: black;
+}
+
+#blueColor {
+    background-color: blue;
+}
+
+#redColor {
+    background-color: red;
+}
+
+#greenColor {
+    background-color: green;
+}
+
+#whiteColor {
+    background-color: white;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    margin-right: 10px; 
+    position: absolute;
+    right: 0;
+}
+
+.d-flex.align-items-center {
+    position: relative;
+}
