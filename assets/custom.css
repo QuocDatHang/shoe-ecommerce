@@ -78,10 +78,24 @@ input.form-control {
 .oldPrice {
     text-decoration: line-through;
     margin-right: 10px; 
-    position: absolute;
-    right: 0;
 }
 
 .d-flex.align-items-center {
     position: relative;
+}
+
+.fa-solid.fa-cart-arrow-down.fa-lg {
+    position: absolute;
+    right: 0;
+}
+
+.card-img-top {
+    height: 100px;
+    width: 170px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.card {
+    height: 220px;
 }

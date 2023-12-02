@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" \ />
     <link rel="stylesheet" href="assets/custom.css">
+    <script src="assets/jquery/jquery-3.7.1.min.js"></script>
+
     <title>Shoe Ecommerce</title>
 </head>
 
@@ -170,87 +172,23 @@
             <div class="col-lg-10 mt-1">
                 <h5>Recommended</h5>
                 <div class="d-flex">
-                    <button type="button" class="btn btn-outline-secondary">All Products</button>
-                    <button type="button" class="btn btn-outline-secondary">Nike</button>
-                    <button type="button" class="btn btn-outline-secondary">Adidas</button>
-                    <button type="button" class="btn btn-outline-secondary">Puma</button>
-                    <button type="button" class="btn btn-outline-secondary">Vans</button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="getAllCompany()">All Products</button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="getAllNike()">Nike</button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="getAllAdidas()">Adidas</button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="getAllPuma()">Puma</button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="getAllVans()">Vans</button>
                 </div>
 
                 <h5 class="mt-2">Products</h5>
-                <div class="row row-cols-1 row-cols-md-4 g-4">
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg"
-                                class="card-img-top h-50" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Nike Waffle One Sneaker</h5>
-                                <div class="d-flex">
-                                    <div class="cols-2">
-                                        <i class="fa-solid fa-star fa-xs" style="color: #f4f41a;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #f4f41a;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #f4f41a;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #f4f41a;"></i>
-                                    </div>
-                                    <div class="cols-2">(123 viewers)</div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <span class="oldPrice">$140</span>
-                                    <span>$200</span>
-                                    <i class="fa-solid fa-cart-arrow-down fa-lg"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg"
-                                class="card-img-top h-50" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Nike Waffle One Sneaker</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="https://m.media-amazon.com/images/I/71oEKkghg-L._AC_UX575_.jpg"
-                                class="card-img-top h-50" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Nike Waffle One Sneaker</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg"
-                                class="card-img-top h-50" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Nike Waffle One Sneaker</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg"
-                                class="card-img-top h-50" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Nike Waffle One Sneaker</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row row-cols-1 row-cols-md-4 g-4" id="showProduct">
+                    <!-- LIST OF PRODUCT -->
                 </div>
-
             </div>
-
         </div>
+    </div>
+
+    <script src="assets/style.js"></script>
+    
 </body>
 
 </html>
