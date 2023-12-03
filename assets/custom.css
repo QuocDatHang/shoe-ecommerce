@@ -99,3 +99,9 @@ input.form-control {
 .card {
     height: 220px;
 }
+
+.btn:focus {
+    background-color: #6c757d;
+    color: #fff;
+    border-color: #6c757d;
+}
